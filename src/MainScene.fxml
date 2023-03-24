@@ -7,8 +7,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="27.0" layoutY="33.0" text="lagyan mo kasi label" />
+      <Label layoutX="27.0" layoutY="33.0" text="may label ba kayo?" />
       <TextField fx:id="message" layoutX="27.0" layoutY="57.0" prefHeight="26.0" prefWidth="550.0" />
-      <Button layoutX="257.0" layoutY="108.0" mnemonicParsing="false" onAction="#btnOK" text="send message" />
+      <Button layoutX="250.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnOK" text="send message" />
    </children>
 </AnchorPane>
