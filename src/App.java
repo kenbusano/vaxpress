@@ -7,7 +7,7 @@ import javafx.scene.text.Text;
  
 public class App extends Application {
     public Parent createContent() {
-        Text text = new Text("tangina niyooo");
+        Text text = new Text("Hello World");
         text.getStyleClass().add("text");
         return new StackPane(text);
     }
