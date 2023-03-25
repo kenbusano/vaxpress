@@ -11,7 +11,10 @@ public class App extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-        stage.setScene(new Scene(createContent(), 300, 300));
+        Parent rootNode = createContent();
+        Scene scene = new Scene(rootNode, 300, 300);
+        scene.getStylesheets().add("resources/stylesheet.css");
+        stage.setScene(scene);
         stage.show();
     }
     public static void main(String[] args) {
