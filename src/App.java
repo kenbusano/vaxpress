@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
 
 public class App extends Application {
-    //Opening the FXML basics
+    //Opening the application basics
     public static void main(String[] args) {
         launch(args);
     }
