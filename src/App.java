@@ -1,26 +1,22 @@
-import java.io.IOException;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
  
 public class App extends Application {
-    @Override
-    public void start(Stage primaryStage) {
-   
-    Parent root;
-    try {
-        root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
-        Scene scene = new Scene(root);
-  
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
+
+    private Parent createContent() {
+        return new StackPane(new Text("Hello World"));
     }
-}
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.setScene(new Scene(createContent(), 300, 300));
+        stage.show();
+    }
+
     public static void main(String[] args) {
         launch(args);
     }
