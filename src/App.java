@@ -11,10 +11,12 @@ public class App extends Application {
         launch(args);
     }
     public void start(Stage stage) throws Exception {
+        //Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
         String fxmlDocPath = "src/Landing.fxml";
         FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
         AnchorPane root = (AnchorPane) loader.load(fxmlStream);
+        //Staging start
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("VAXPress - Vaccine Record Management System");
