@@ -17,7 +17,7 @@ public class App extends Application {
         AnchorPane root = (AnchorPane) loader.load(fxmlStream);
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Exampleee");
+        stage.setTitle("VAXPress - Vaccine Record Management System");
         stage.show();
     }
 }
