@@ -7,7 +7,9 @@ import javafx.scene.text.Text;
  
 public class App extends Application {
     public Parent createContent() {
-        return new StackPane(new Text("Hello World"));
+        Text text = new Text("tangina niyooo");
+        text.getStyleClass().add("text");
+        return new StackPane(text);
     }
     @Override
     public void start(Stage stage) throws Exception {
