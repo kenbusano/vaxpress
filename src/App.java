@@ -20,6 +20,7 @@ public class App extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("VAXPress - Vaccine Record Management System");
+        stage.setResizable(false); // Window Sizing Prevention
         stage.show();
     }
 }
