@@ -18,12 +18,12 @@
                         <Font size="64.0" />
                      </font>
                   </Label>
-                  <Label text="Vaccine Record Management System">
+                  <Label text="Vaccine Record Management System" id="custom">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Proceed" style="    -fx-font-weight: BOLD;" />
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Proceed" style="    -fx-font-weight: BOLD;" id="custom" />
                </children>
             </VBox>
          </center>
