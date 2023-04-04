@@ -10,7 +10,6 @@ public class App extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
     public void start(Stage stage) throws Exception {
         //Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
