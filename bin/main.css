@@ -5,6 +5,6 @@
 }
 .button {
     -fx-background-color: #98B1EA; 
-    -fx-background-radius: 8;
+    -fx-background-radius: 8; /* rounded corners 4 javaFX */
     -fx-text-fill: #ffffff;
 }
