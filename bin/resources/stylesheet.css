@@ -1,8 +1,0 @@
-@font-face {
-    font-family: "Poppins";
-    src: url("./Poppins-Regular.ttf");
-}
-/* This tends to define as global font (applies to whole) */
-.text {
-    -fx-font-family: "Poppins";
-}
