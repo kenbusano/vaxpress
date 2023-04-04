@@ -26,7 +26,8 @@
                   <Button id="custom" mnemonicParsing="false" prefHeight="50.0" prefWidth="279.0" style="    -fx-font-weight: BOLD; -fx-font-size: 16px;" text="Proceed">
                      <font>
                         <Font />
-                     </font></Button>
+                     </font>
+                  </Button>
                </children>
             </VBox>
          </center>
