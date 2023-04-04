@@ -1,3 +1,10 @@
+/**
+ *  2023 - DEV
+ *  Developer: Kenneth Obsequio
+ *  GitHub: https://github.com/kenbusano
+ *  License: MIT
+ */
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import javafx.application.Application;
