@@ -15,7 +15,7 @@ public class Login {
     @FXML
     private void proceedBtn(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) proceedBtn.getScene().getWindow();
