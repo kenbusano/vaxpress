@@ -18,8 +18,7 @@ public class App extends Application {
         AnchorPane root = (AnchorPane) loader.load(fxmlStream);
         //Staging start
         Scene scene = new Scene(root);
-        //Use my CSS file
-        scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm()); //Use my CSS file
         stage.setScene(scene);
         stage.setTitle("VAXPress - Vaccine Record Management System");
         stage.setResizable(false); // Window Sizing Prevention
