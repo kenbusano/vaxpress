@@ -13,17 +13,20 @@
          <center>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="VAXPress" id="custom" style="-fx-font-weight: BOLD;">
+                  <Label id="custom" style="-fx-font-weight: BOLD;" text="VAXPress">
                      <font>
                         <Font size="64.0" />
                      </font>
                   </Label>
-                  <Label text="Vaccine Record Management System" id="custom">
+                  <Label id="custom" text="Vaccine Record Management System">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Proceed" style="    -fx-font-weight: BOLD;" id="custom" />
+                  <Button id="custom" mnemonicParsing="false" prefHeight="38.0" prefWidth="279.0" style="    -fx-font-weight: BOLD; -fx-font-size: 16px;" text="Proceed">
+                     <font>
+                        <Font />
+                     </font></Button>
                </children>
             </VBox>
          </center>
