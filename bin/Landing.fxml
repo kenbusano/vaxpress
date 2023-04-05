@@ -14,7 +14,7 @@
    License: MIT
 
    All of the FXML is SceneBuilder generated here we need to specify fx:controller attribute to associate within 
-   specific controller class. In this case we have to specify the controller class name named "client.Login" 
+   specific controller class. In this case we have to specify the controller class named "client.Login" 
    to associate event handlers in my controller to be invoked once the user clicks "Proceed" button.
 -->
 
