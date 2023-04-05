@@ -8,14 +8,3 @@
     -fx-background-radius: 8; /* rounded corners 4 javaFX */
     -fx-text-fill: #ffffff;
 }
-#loginUser {
-    -fx-background-color: #98B1EA; 
-    -fx-background-radius: 8;
-    -fx-text-fill: #ffffff;
-}
-#loginUser {
-    -fx-font-family: 'Poppins';
-}
-#SignUp {
-    -fx-font-family: 'Poppins';
-}
