@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -28,12 +29,12 @@
          <top>
             <VBox prefHeight="96.0" prefWidth="466.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Login" style="-fx-font-weight: BOLD;" id="custom">
+                  <Label id="custom" style="-fx-font-weight: BOLD;" text="Login">
                      <font>
                         <Font size="32.0" />
                      </font>
                   </Label>
-                  <Label text="Welcome!" id="custom">
+                  <Label id="custom" text="Welcome!">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -44,19 +45,19 @@
          <center>
             <VBox prefHeight="7.0" prefWidth="466.0" spacing="16.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Email" id="custom">
+                  <Label id="custom" text="Email">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField />
-                  <Label text="Password" id="custom">
+                  <TextField prefHeight="46.0" prefWidth="466.0" />
+                  <Label id="custom" text="Password">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField />
-                  <Button id="loginUser" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" text="Login" style="-fx-font-weight: BOLD;">
+                  <PasswordField prefHeight="46.0" prefWidth="466.0" />
+                  <Button id="loginUser" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" style="-fx-font-weight: BOLD;" text="Login">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -70,6 +71,9 @@
             </VBox>
          </center>
       </BorderPane>
-      <ImageView fitHeight="621.0" fitWidth="506.0" layoutX="574.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="642.0" fitWidth="504.0" layoutX="578.0" layoutY="-12.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/banner-fix.png" />
+         </image></ImageView>
    </children>
 </AnchorPane>
