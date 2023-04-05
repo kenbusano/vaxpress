@@ -30,12 +30,12 @@
          <top>
             <VBox prefHeight="96.0" prefWidth="466.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label id="custom" style="-fx-font-weight: BOLD;" text="Login">
+                  <Label style="-fx-font-weight: BOLD;" text="Login">
                      <font>
                         <Font size="32.0" />
                      </font>
                   </Label>
-                  <Label id="custom" text="Welcome!">
+                  <Label text="Welcome!">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -46,30 +46,30 @@
          <center>
             <VBox prefHeight="7.0" prefWidth="466.0" spacing="16.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label id="custom" text="Email">
+                  <Label text="Email">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="46.0" prefWidth="466.0" id="custom">
+                  <TextField prefHeight="46.0" prefWidth="466.0" style="-fx-font-family: 'Poppins';">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></TextField>
-                  <Label id="custom" text="Password">
+                  <Label text="Password">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField prefHeight="46.0" prefWidth="466.0" id="custom">
+                  <PasswordField prefHeight="46.0" prefWidth="466.0">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>
-                  <Button id="loginUser" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" style="-fx-font-weight: BOLD;" text="Login">
+                  <Button id="login" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" text="Login" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button id="SignUp" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-family: Poppins;" text="Sign Up">
+                  <Button id="register" mnemonicParsing="false" text="Sign Up" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-size: 16px; -fx-font-family: 'Poppins';">
                      <font>
                         <Font size="16.0" />
                      </font>

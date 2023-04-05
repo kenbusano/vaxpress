@@ -8,3 +8,15 @@
     -fx-background-radius: 8; /* rounded corners 4 javaFX */
     -fx-text-fill: #ffffff;
 }
+.button:hover {
+    -fx-background-color: #859aca;
+}
+.label {
+    -fx-font-family: 'Poppins';
+}
+#login {
+    -fx-font-weight: bold;
+}
+#register:hover {
+    -fx-text-fill: #859aca;
+}
