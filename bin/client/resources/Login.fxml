@@ -51,7 +51,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="46.0" prefWidth="466.0">
+                  <TextField prefHeight="46.0" prefWidth="466.0" id="custom">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></TextField>
@@ -60,7 +60,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField prefHeight="46.0" prefWidth="466.0">
+                  <PasswordField prefHeight="46.0" prefWidth="466.0" id="custom">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>
