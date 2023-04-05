@@ -7,6 +7,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<!--
+   2023 - DEV
+   Developer: Kenneth Obsequio
+   GitHub: https://github.com/kenbusano
+   License: MIT
+
+   All of the FXML is SceneBuilder generated here we need to specify fx:controller attribute to associate within specific controller class. In this case we have to specify the controller class name named "client.Login" to associate event handlers in my controller to be invoked once the user clicks "Proceed" button.
+-->
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Login">
    <children>
       <BorderPane layoutX="256.0" layoutY="185.0" prefHeight="250.0" prefWidth="568.0">

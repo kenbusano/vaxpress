@@ -10,6 +10,15 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<!--
+   2023 - DEV
+   Developer: Kenneth Obsequio
+   GitHub: https://github.com/kenbusano
+   License: MIT
+
+   Once the fx:controller attribute is specified, we can now use fx:id to specify the id of the component. This is used to reference the component in the controller class. In this case, we have a button named "proceedBtn" and we can reference it in the controller class by using the fx:id named "proceedBtn" just check the Login.java on how the ActionEvent is being handled.
+-->
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Login">
    <children>
       <BorderPane layoutX="51.0" layoutY="129.0" prefHeight="400.0" prefWidth="466.0">
