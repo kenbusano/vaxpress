@@ -1,3 +1,10 @@
+/**
+ *  2023 - DEV
+ *  Developer: Kenneth Obsequio
+ *  GitHub: https://github.com/kenbusano
+ *  License: MIT
+ */
+
 package client;
 import java.io.IOException;
 import javafx.event.ActionEvent;
