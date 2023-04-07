@@ -64,12 +64,12 @@
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>
-                  <Button id="login" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" text="Login" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';">
+                  <Button id="login" mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Login">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button id="register" mnemonicParsing="false" text="Sign Up" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-size: 16px; -fx-font-family: 'Poppins';">
+                  <Button id="register" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Sign Up">
                      <font>
                         <Font size="16.0" />
                      </font>
