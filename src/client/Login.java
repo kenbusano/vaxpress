@@ -6,6 +6,7 @@
  */
 
 package client;
+
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,6 +33,10 @@ public class Login {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    @FXML
+    private void handleRegister(ActionEvent event) {
+        System.out.println("there's something wrong..");
     }
 }
 
