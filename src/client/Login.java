@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Login {
@@ -36,7 +37,19 @@ public class Login {
     }
     @FXML
     private void handleRegister(ActionEvent event) {
-        System.out.println("there's something wrong..");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Modal.fxml"));
+            Parent root = loader.load();
+            Scene scene = new Scene(root);
+            Stage dialogStage = new Stage();
+            dialogStage.setScene(scene);
+            dialogStage.initModality(Modality.APPLICATION_MODAL);
+            dialogStage.initOwner(proceedBtn.getScene().getWindow());
+            dialogStage.showAndWait();
+        } catch (IOException e) {
+            System.out.println("FXML document not found");
+            e.printStackTrace();
+        }
     }
 }
 
