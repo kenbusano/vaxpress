@@ -12,8 +12,8 @@
    GitHub: https://github.com/kenbusano
    License: MIT
 
-   I personally hate the Modal Dialog Box idk but I choose Scene and Stage to show more FXML documents in this
-   case base on my initial design lmao.
+   I personally hate the Modal Dialog Box idk so I choose Scene and Stage to show more FXML documents in this
+   case accordingly in my initial design lmao.
 -->
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
