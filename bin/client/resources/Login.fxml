@@ -69,7 +69,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button id="register" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Sign Up" onAction="#handleRegister">
+                  <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#handleRegister" style="-fx-background-color: transparent; -fx-padding: 0; -fx-text-fill: #98B1EA; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Sign Up">
                      <font>
                         <Font size="16.0" />
                      </font>
