@@ -1,5 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 12)
+maglalagay ng docs this is my (Week 14)
 
-*tangina late na akoo
+*luh gagi hindi ako nakapagbago rito noong week 13 nangyan
