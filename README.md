@@ -1,5 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 13)
+maglalagay ng docs this is my (Week 14)
 
-*week 13 pa lang oy 
+*galaw galaw naaa self
