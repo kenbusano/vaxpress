@@ -15,11 +15,11 @@
    This is Register Notice where it shows the beginning of the registration process.
 -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Modal">
    <children>
       <BorderPane layoutX="265.0" layoutY="208.0" prefHeight="200.0" prefWidth="472.0">
          <top>
-            <Label alignment="CENTER" text="Notice" BorderPane.alignment="CENTER_LEFT" style="-fx-font-weight: BOLD;">
+            <Label alignment="CENTER" style="-fx-font-weight: BOLD;" text="Notice" BorderPane.alignment="CENTER_LEFT">
                <font>
                   <Font size="32.0" />
                </font>
@@ -33,7 +33,7 @@
             </Label>
          </left>
          <bottom>
-            <Button id="login" mnemonicParsing="false" prefHeight="44.0" prefWidth="545.0" text="Proceed" BorderPane.alignment="TOP_LEFT" style=" -fx-font-weight: BOLD; -fx-font-size: 18px;">
+            <Button id="login" fx:id="noticeBtn" mnemonicParsing="false" onAction="#handleNotice" prefHeight="44.0" prefWidth="545.0" style=" -fx-font-weight: BOLD; -fx-font-size: 18px;" text="Proceed" BorderPane.alignment="TOP_LEFT">
                <font>
                   <Font size="18.0" />
                </font>
