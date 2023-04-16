@@ -19,21 +19,21 @@
    <children>
       <BorderPane layoutX="265.0" layoutY="208.0" prefHeight="200.0" prefWidth="472.0">
          <top>
-            <Label alignment="CENTER" text="Notice" BorderPane.alignment="CENTER_LEFT">
+            <Label alignment="CENTER" text="Notice" BorderPane.alignment="CENTER_LEFT" style="-fx-font-weight: BOLD;">
                <font>
                   <Font size="32.0" />
                </font>
             </Label>
          </top>
          <left>
-            <Label prefHeight="109.0" prefWidth="601.0" text="Be mindful on the details that you’re indicating for. Once the details provide is invalid you can also makesome changes to update and initialize the wrong information's that you provide." wrapText="true" BorderPane.alignment="CENTER">
+            <Label prefHeight="109.0" prefWidth="601.0" text="Be mindful on the details that you're indicating for. Once the details provide is invalid you can also make some changes to update and initialize the wrong information's that you provide." wrapText="true" BorderPane.alignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
          </left>
          <bottom>
-            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="545.0" text="Proceed" BorderPane.alignment="TOP_LEFT">
+            <Button id="login" mnemonicParsing="false" prefHeight="44.0" prefWidth="545.0" text="Proceed" BorderPane.alignment="TOP_LEFT" style=" -fx-font-weight: BOLD; -fx-font-size: 18px;">
                <font>
                   <Font size="18.0" />
                </font>
