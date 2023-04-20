@@ -13,8 +13,6 @@
    License: MIT
 
    This is Register Notice where it shows the beginning of the registration process.
-
-   Update: Wala pang fx:controller and fx:id coz di gumagana kapag ni-run
 -->
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.RegisterNotice">
