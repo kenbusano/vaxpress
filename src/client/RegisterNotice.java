@@ -22,18 +22,13 @@ public class RegisterNotice {
     private Button noticeBtn;
 
     @FXML
-    private void startRegister(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt1.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-            Stage stage = (Stage) noticeBtn.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            System.out.println("FXML document not found");
-            e.printStackTrace();
-        }
+    private void startRegister(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt1.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) noticeBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }
