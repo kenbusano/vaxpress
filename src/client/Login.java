@@ -24,18 +24,14 @@ public class Login {
     private Button registerBtn;
 
     @FXML
-    private void proceedBtn(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Login.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-            Stage stage = (Stage) proceedBtn.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void proceedBtn(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Login.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) proceedBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     private void handleRegister(ActionEvent event) throws IOException {
