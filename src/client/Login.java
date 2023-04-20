@@ -38,19 +38,14 @@ public class Login {
         }
     }
     @FXML
-    private void handleRegister(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Modal.fxml"));
-            Parent root = loader.load();
-            Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-            Stage stage = (Stage) registerBtn.getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            System.out.println("FXML document not found");
-            e.printStackTrace();
-        }
+    private void handleRegister(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Modal.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) registerBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }
 
