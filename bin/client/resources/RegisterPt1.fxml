@@ -56,8 +56,8 @@
          <bottom>
             <VBox prefHeight="71.0" prefWidth="428.0" spacing="12.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="428.0" text="Proceed" />
-                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="428.0" text="Back" />
+                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="428.0" text="Next" />
+                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="428.0" text="Already have an account?" />
                </children>
             </VBox>
          </bottom>
