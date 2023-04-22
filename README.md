@@ -1,5 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 14)
+maglalagay ng docs this is my (Week 15)
 
-*galaw galaw naaa self anonaaaa
+*tangina self anona wala ka parin sa database?
