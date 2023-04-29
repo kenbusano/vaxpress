@@ -32,13 +32,5 @@
       "request": "launch",
       "mainClass": "${file}"
     },
-    {
-      "type": "java",
-      "name": "App",
-      "request": "launch",
-      "mainClass": "App",
-      "projectName": "vaxpress_760f9aa7",
-      "vmArgs": "--module-path \"/home/lazymonster/Downloads/openjfx-17.0.6_linux-x64_bin-sdk/javafx-sdk-17.0.6/lib\" --add-modules javafx.controls,javafx.fxml"
-    }
   ]
 }
