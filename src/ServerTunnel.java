@@ -5,10 +5,10 @@ public class ServerTunnel {
     public Connection databaseLink;
 
     public Connection getConnection() {
-        String tableName = "";
+        String tableName = "test-vrms";
         String usn = "";
         String pwd = "";
-        String url = "jdbc:mysql://localhost:3306/" + tableName + "?useSSL=false&serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost/" + tableName + "?useSSL=false&serverTimezone=UTC";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
