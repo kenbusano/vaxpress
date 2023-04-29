@@ -1,3 +1,5 @@
+/* may error d2 */
+
 import javafx.event.ActionEvent;
 import java.beans.Statement;
 import java.sql.Connection;
@@ -8,7 +10,7 @@ public class TestData {
         ServerTunnel connectNow = new ServerTunnel();
         Connection connectDB = connectNow.getConnection();
 
-        String connectQuery = "SELECT * FROM test-vrms.test";
+        String connectQuery = "sql command here";
 
         try {
             Statement statement = (Statement) connectDB.createStatement();
