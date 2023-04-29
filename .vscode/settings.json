@@ -1,23 +1,29 @@
 {
   "java.project.sourcePaths": ["src"],
   "java.project.outputPath": "bin",
-  "java.project.referencedLibraries": {
-    "include": [
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx-swt.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.base.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.controls.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.fxml.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.graphics.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.swing.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.web.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx-swt.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.base.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.controls.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.fxml.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.graphics.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.media.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.swing.jar",
-      "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.web.jar"
-    ]
-  }
+  "java.project.referencedLibraries": [
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx-swt.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.base.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.controls.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.fxml.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.graphics.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.swing.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.web.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx-swt.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.base.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.controls.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.fxml.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.graphics.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.media.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.swing.jar",
+    "c:\\Users\\obseq\\Desktop\\Ken\\openjfx-19.0.2.1_windows-x64_bin-sdk\\javafx-sdk-19.0.2.1\\lib\\javafx.web.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.base.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.controls.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.fxml.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.graphics.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.media.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.swing.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx.web.jar",
+    "c:\\Users\\Rogu\\Downloads\\openjfx-17.0.7_windows-x64_bin-sdk\\javafx-sdk-17.0.7\\lib\\javafx-swt.jar"
+  ]
 }
