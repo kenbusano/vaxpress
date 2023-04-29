@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "app/App",
+      "request": "launch",
+      "mainClass": "app/App",
+      "projectName": "vaxpress_6c66f188"
+    },
+    {
+      "type": "java",
       "name": "Dashboard",
       "request": "launch",
       "mainClass": "admin.Dashboard",
