@@ -13,20 +13,39 @@ import java.sql.SQLException;
 
 public class Tunnel {
     public Connection databaseLink;
-    String URL = "jdbc:mysql://localhost/vrms-client";
+    String URL = "jdbc:mysql://localhost:3306/vrms-client";
     String user = "root";
     String password = "";
 
-    public Tunnel() {}
+    public Tunnel() {
+    }
 
     public void connect() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
-            databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
-            System.out.println("VRMS Database is Connected ^^");
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-            System.out.println("VRMS Database Connection Failed! Please find the initial SQL file in the project folder.");
+            Connection connection = DriverManager.getConnection(URL, user, password);
+
+            System.out.println(connection);
+
+            // Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
+            // databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+    }
+
+    public static void printSQLException(SQLException ex) {
+        for (Throwable e : ex) {
+            if (e instanceof SQLException) {
+                e.printStackTrace(System.err);
+                System.err.println("SQLState: " + ((SQLException) e).getSQLState());
+                System.err.println("Error Code: " + ((SQLException) e).getErrorCode());
+                System.err.println("Message: " + e.getMessage());
+                Throwable t = ex.getCause();
+                while (t != null) {
+                    System.out.println("Cause: " + t);
+                    t = t.getCause();
+                }
+            }
         }
     }
 }

@@ -7,6 +7,6 @@ package server;
  *  License: MIT
  */
 
-public class TestDb {
+public class Register {
     
 }

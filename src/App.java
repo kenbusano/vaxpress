@@ -1,3 +1,4 @@
+
 /**
  *  2023 - DEV
  *  Developer: Kenneth Obsequio
@@ -15,12 +16,13 @@ import server.Tunnel;
 import javafx.scene.layout.AnchorPane;
 
 public class App extends Application {
-    //Opening the application basics
+    // Opening the application basics
     public static void main(String[] args) {
         launch(args);
     }
+
     public void start(Stage stage) throws Exception {
-        //Specifying to load FXML document
+        // Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
         String fxmlDocPath = "src/Landing.fxml";
         try (FileInputStream fxmlStream = new FileInputStream(fxmlDocPath)) {
@@ -31,9 +33,11 @@ public class App extends Application {
             stage.setTitle("VAXPress - Vaccine Record Management System");
             stage.setResizable(false); // Window Sizing Prevention
             stage.show();
-            //Simple Database Connecting
-            Tunnel server = new Tunnel();
-            server.connect();
+
+            // Simple Database Connecting
+            Tunnel tunnel = new Tunnel();
+            tunnel.connect();
+            
         } catch (IOException e) {
             System.err.println("Failed to load FXML file: " + e.getMessage());
         }

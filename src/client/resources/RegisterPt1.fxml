@@ -65,7 +65,7 @@
          <bottom>
             <VBox prefHeight="71.0" prefWidth="428.0" spacing="12.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" text="Next" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" />
+                  <Button fx:id="proceedBtn" mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Next" disable="true" />
                   <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Already have an account?" />
                </children>
             </VBox>
