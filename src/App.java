@@ -22,12 +22,10 @@ public class App extends Application {
         //Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
         String fxmlDocPath = "src/database.fxml";
-        //Try & Catch Method para mag-mukhang obsolete yung bawat initializations
         try (FileInputStream fxmlStream = new FileInputStream(fxmlDocPath)) {
             AnchorPane root = (AnchorPane) loader.load(fxmlStream);
-            //Staging start
             Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm()); //Use my CSS file
+            scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
             stage.setScene(scene);
             stage.setTitle("VAXPress - Vaccine Record Management System");
             stage.setResizable(false); // Window Sizing Prevention
