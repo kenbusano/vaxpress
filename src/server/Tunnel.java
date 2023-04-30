@@ -23,13 +23,13 @@ public class Tunnel {
     public void connect() {
         try {
             Connection connection = DriverManager.getConnection(URL, user, password);
-
             System.out.println(connection);
-
-            // Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
-            // databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
+            Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
+            databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
         } catch (SQLException e) {
             printSQLException(e);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
