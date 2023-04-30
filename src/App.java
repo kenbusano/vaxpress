@@ -22,7 +22,7 @@ public class App extends Application {
         //Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
         String fxmlDocPath = "src/database.fxml";
-        //Try & Catch Method is helpful to determine the specific errors in program!
+        //Try & Catch Method para mag-mukhang obsolete yung bawat initializations
         try (FileInputStream fxmlStream = new FileInputStream(fxmlDocPath)) {
             AnchorPane root = (AnchorPane) loader.load(fxmlStream);
             //Staging start

@@ -6,9 +6,9 @@ public class ServerTunnel {
 
     public Connection getConnection() {
         String tableName = "test-vrms";
-        String usn = "";
-        String pwd = "";
-        String url = "jdbc:mysql://localhost/" + tableName + "?useSSL=false&serverTimezone=UTC";
+        String usn = "root";
+        String pwd = "lazydeveloper";
+        String url = "jdbc:mysql://localhost/" + tableName;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
