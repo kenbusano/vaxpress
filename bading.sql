@@ -1,1 +1,0 @@
-SELECT * FROM `bad-test`;
