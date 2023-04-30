@@ -22,7 +22,7 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         //Specifying to load FXML document
         FXMLLoader loader = new FXMLLoader();
-        String fxmlDocPath = "src/database.fxml";
+        String fxmlDocPath = "src/Landing.fxml";
         try (FileInputStream fxmlStream = new FileInputStream(fxmlDocPath)) {
             AnchorPane root = (AnchorPane) loader.load(fxmlStream);
             Scene scene = new Scene(root);
@@ -31,6 +31,7 @@ public class App extends Application {
             stage.setTitle("VAXPress - Vaccine Record Management System");
             stage.setResizable(false); // Window Sizing Prevention
             stage.show();
+            //Simple Database Connecting
             Tunnel server = new Tunnel();
             server.connect();
         } catch (IOException e) {
