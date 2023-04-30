@@ -21,7 +21,7 @@ public class Tunnel {
 
     public void connect() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
             System.out.println("iloveyou");
         } catch (SQLException | ClassNotFoundException e) {
