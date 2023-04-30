@@ -1,7 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 15)
+maglalagay ng docs this is my (Week 16)
 
-*tangina self anona wala ka parin sa database?
-
-yawa mag-may na huhu
+*connected na database natin huhu
