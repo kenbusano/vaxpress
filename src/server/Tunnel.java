@@ -1,25 +1,32 @@
 package server;
 
+/**
+ *  2023 - DEV
+ *  Developer: Kenneth Obsequio
+ *  GitHub: https://github.com/kenbusano
+ *  License: MIT
+ */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Tunnel {
     public Connection databaseLink;
+    String URL = "jdbc:mysql://localhost/mysql";
+    String user = "root";
+    String password = "";
 
-    public Connection getConnection() {
-        String tableName = "";
-        String usn = "";
-        String pwd = "";
-        String url = "jdbc:mysql://localhost:3306/" + tableName;
+    public Tunnel() {}
 
+    public void connect() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            databaseLink = DriverManager.getConnection(url, usn, pwd);
-        } catch (Exception e) {
+            Class.forName("com.mysql.jdbc.Driver");
+            databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
+            System.out.println("iloveyou");
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            e.getCause();
+            System.out.println("mabuhay");
         }
-
-        return databaseLink;
     }
 }

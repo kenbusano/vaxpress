@@ -11,6 +11,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import server.Tunnel;
 import javafx.scene.layout.AnchorPane;
 
 public class App extends Application {
@@ -30,6 +31,8 @@ public class App extends Application {
             stage.setTitle("VAXPress - Vaccine Record Management System");
             stage.setResizable(false); // Window Sizing Prevention
             stage.show();
+            Tunnel server = new Tunnel();
+            server.connect();
         } catch (IOException e) {
             System.err.println("Failed to load FXML file: " + e.getMessage());
         }
