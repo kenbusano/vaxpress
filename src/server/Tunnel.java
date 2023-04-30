@@ -23,10 +23,10 @@ public class Tunnel {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
             databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
-            System.out.println("iloveyou");
+            System.out.println("VRMS Database is Connected ^^");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            System.out.println("mabuhay");
+            System.out.println("VRMS Database Connection Failed! Please find the initial SQL file in the project folder.");
         }
     }
 }
