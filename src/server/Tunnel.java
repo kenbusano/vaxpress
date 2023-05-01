@@ -21,15 +21,12 @@ public class Tunnel {
     private static final String SELECT_QUERY = "SELECT * FROM user_client";
     ResultSet rst = null;
 
-    public Tunnel() {
-    }
-
     public void connect() {
         try {
+            //Testing
+            
             Connection connection = DriverManager.getConnection(URL, user, password);
             System.out.println(connection);
-            // Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
-            // databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
 
             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY);
 
