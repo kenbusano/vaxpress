@@ -33,7 +33,6 @@ public class App extends Application {
             stage.setTitle("VAXPress - Vaccine Record Management System");
             stage.setResizable(false); // Window Sizing Prevention
             stage.show();
-
             // Simple Database Connecting
             Tunnel tunnel = new Tunnel();
             tunnel.connect();
