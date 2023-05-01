@@ -10,12 +10,16 @@ package server;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class Tunnel {
     public Connection databaseLink;
     String URL = "jdbc:mysql://localhost:3306/vrms-client";
     String user = "root";
     String password = "";
+    private static final String SELECT_QUERY = "SELECT * FROM user_client";
+    ResultSet rst = null;
 
     public Tunnel() {
     }
@@ -24,13 +28,26 @@ public class Tunnel {
         try {
             Connection connection = DriverManager.getConnection(URL, user, password);
             System.out.println(connection);
-            Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
-            databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
+            // Class.forName("com.mysql.cj.jdbc.Driver"); //cj driver is latest :)
+            // databaseLink = (Connection) DriverManager.getConnection(URL, user, password);
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_QUERY);
+
+            System.out.println(preparedStatement);
+            rst = preparedStatement.executeQuery();
+            
+            System.out.println("Id\t\tUsername\t\tPassword");
+
+            while(rst.next()) {
+                System.out.print(rst.getInt(1));
+                System.out.print("\t\t"+rst.getString(2));
+                System.out.print("\t\t"+rst.getString(3));
+                System.out.println();
+            }
+
         } catch (SQLException e) {
             printSQLException(e);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        } 
     }
 
     public static void printSQLException(SQLException ex) {
