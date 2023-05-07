@@ -1,5 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 16)
+maglalagay ng docs this is my (Week 17)
 
 *connected na database natin huhu
