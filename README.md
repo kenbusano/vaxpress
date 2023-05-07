@@ -2,4 +2,4 @@
 
 maglalagay ng docs this is my (Week 17)
 
-*connected na database natin huhu
+*hoy gago what if kung bukas na to???
