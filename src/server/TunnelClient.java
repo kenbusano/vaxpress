@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class Tunnel {
+public class TunnelClient {
     public Connection databaseLink;
     String URL = "jdbc:mysql://localhost:3306/vrms-client";
     String user = "root";
