@@ -37,7 +37,7 @@ public class App extends Application {
             tunnel.connect();
              
         } catch (IOException e) {
-            System.err.println("Failed to load FXML file: " + e.getMessage());
+            System.err.println("Failed to load FXML file: " + e.getMessagge());
         }
     }
 }
