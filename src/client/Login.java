@@ -29,9 +29,6 @@ public class Login {
     private Button registerBtn;
 
     @FXML
-    private Button loginNow;
-
-    @FXML
     private TextField userField;
 
     @FXML
@@ -73,7 +70,7 @@ public class Login {
         }
     }
     @FXML
-    private void loginNow() {
+    private void loginNow(ActionEvent event) {
         Admin();
     }
     
