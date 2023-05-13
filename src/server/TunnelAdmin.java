@@ -24,7 +24,7 @@ public class TunnelAdmin {
         }
     }
     public static boolean AdminVal(String username, String password) throws SQLException {
-        String query = "SELECT * FROM users WHERE username=? AND password=?";
+        String query = "SELECT * FROM user_admin WHERE admin_name AND admin_pass";
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vrms-client", "root", "");
             PreparedStatement stmt = connection.prepareStatement(query);

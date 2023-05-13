@@ -9,7 +9,6 @@ package client;
 
 import java.io.IOException;
 import java.sql.SQLException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -28,6 +27,9 @@ public class Login {
 
     @FXML
     private Button registerBtn;
+
+    @FXML
+    private Button loginNow;
 
     @FXML
     private TextField userField;
@@ -62,7 +64,7 @@ public class Login {
     
         try {
             if (TunnelAdmin.AdminVal(username, password)) {
-                System.out.println("ayan gumagana na ");
+                System.out.println("ayan gumagana na");
             } else {
                 System.out.println("gagoooo mali");
             }
@@ -74,6 +76,7 @@ public class Login {
     private void loginNow() {
         Admin();
     }
+    
     public void initialize() {
         userField.setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.ENTER) {
