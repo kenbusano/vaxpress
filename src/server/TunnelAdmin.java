@@ -23,25 +23,26 @@ public class TunnelAdmin {
             printSQLException(e);
         }
     }
-    public static boolean AdminVal(String username, String password) throws SQLException {
-        String query = "SELECT * FROM user_admin";
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vrms-client", "root", "");
-             PreparedStatement stmt = connection.prepareStatement(query)) {
+    public boolean isAdminUser(String username, String password) throws SQLException {
+        boolean isAdmin = false;
+        String sql = "SELECT COUNT(*) FROM user_admin WHERE admin_name AND admin_pass";
+        try (Connection conn = DriverManager.getConnection(URL, user, password);
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, username);
             stmt.setString(2, password);
-            System.out.println(stmt);
-            try (ResultSet rs = stmt.executeQuery()) {
-                System.out.println("Id\t\tUsername\t\tPassword");
-                while (rs.next()) {
-                    System.out.println(rs.getInt("admin_id") + "\t" + rs.getString("admin_name") + "\t\t" + rs.getString("admin_pass"));
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                int count = rs.getInt(1);
+                if (count > 0) {
+                    isAdmin = true;
                 }
-                return rs.first();
             }
-        } catch (SQLException e) {
-            printSQLException(e);
-            return false;
+        } catch (SQLException ex) {
+            System.err.println("Error checking admin user credentials: " + ex.getMessage());
+            throw ex;
         }
-    }    
+        return isAdmin;
+    }
     public static void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
             if (e instanceof SQLException) {
