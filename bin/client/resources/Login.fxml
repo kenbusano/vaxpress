@@ -47,7 +47,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="userField" prefHeight="46.0" prefWidth="466.0" style="-fx-font-family: 'Poppins';">
+                  <TextField prefHeight="46.0" prefWidth="466.0" style="-fx-font-family: 'Poppins';">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></TextField>
@@ -56,11 +56,11 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField fx:id="passField" prefHeight="46.0" prefWidth="466.0">
+                  <PasswordField prefHeight="46.0" prefWidth="466.0">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>
-                  <Button fx:id="loginNow" mnemonicParsing="false" onAction="#logAdmin" prefHeight="48.0" prefWidth="466.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Login">
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="466.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Login">
                      <font>
                         <Font size="18.0" />
                      </font>
