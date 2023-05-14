@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import server.TunnelClient;
+import server.TunnelAdmin;
 import javafx.scene.layout.AnchorPane;
 
 public class App extends Application {
@@ -35,6 +36,8 @@ public class App extends Application {
             // Simple Database Connecting
             TunnelClient tunnel = new TunnelClient();
             tunnel.connect();
+            TunnelAdmin serverAdmin = new TunnelAdmin();
+            serverAdmin.connectAdmin();
         } catch (IOException e) {
             System.err.println("Failed to load FXML file: " + e.getMessage());
         }

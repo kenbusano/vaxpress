@@ -11,7 +11,7 @@ public class TunnelAdmin {
     String URL = "jdbc:mysql://localhost:3306/vrms-client";
     String user = "root";
     String password = "";
-    private static final String SELECT_QUERY = "SELECT * FROM `user_admin` WHERE admin_name AND admin_pass";
+    private static final String SELECT_QUERY = "SELECT * FROM user_admin";
     
     public void connectAdmin() {
         try {
@@ -24,14 +24,19 @@ public class TunnelAdmin {
         }
     }
     public static boolean AdminVal(String username, String password) throws SQLException {
-        String query = "SELECT * FROM user_admin WHERE admin_name AND admin_pass";
-        try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vrms-client", "root", "");
-            PreparedStatement stmt = connection.prepareStatement(query);
+        String query = "SELECT * FROM user_admin";
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/vrms-client", "root", "");
+             PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, username);
             stmt.setString(2, password);
-            ResultSet rs = stmt.executeQuery();
-            return rs.next();
+            System.out.println(stmt);
+            try (ResultSet rs = stmt.executeQuery()) {
+                System.out.println("Id\t\tUsername\t\tPassword");
+                while (rs.next()) {
+                    System.out.println(rs.getInt("admin_id") + "\t" + rs.getString("admin_name") + "\t\t" + rs.getString("admin_pass"));
+                }
+                return rs.first();
+            }
         } catch (SQLException e) {
             printSQLException(e);
             return false;
