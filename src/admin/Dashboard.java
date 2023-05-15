@@ -27,6 +27,9 @@ public class Dashboard {
     private Button vaccHome;
 
     @FXML
+    private Button vaccRequest;
+
+    @FXML
     private void adminHome (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/AdminPanel.fxml"));
         Parent root = loader.load();
@@ -39,6 +42,16 @@ public class Dashboard {
     @FXML
     private void vaccine (ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/AdminVacc.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) logOut.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void addVaccine (ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/AdminFillUp.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
