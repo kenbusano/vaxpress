@@ -48,7 +48,16 @@ public class Login {
 
         if (username.equals("eyelash") && password.equals("admin")) {
             System.out.println("admin login bitch");
-            
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/admin/resources/AdminPanel.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) userField.getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             System.out.println("not working");
         }
