@@ -14,6 +14,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class Login {
@@ -24,6 +26,12 @@ public class Login {
     private Button registerBtn;
 
     @FXML
+    private TextField userField;
+
+    @FXML
+    private PasswordField passField;
+
+    @FXML
     private void proceedBtn(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Login.fxml"));
         Parent root = loader.load();
@@ -32,6 +40,18 @@ public class Login {
         Stage stage = (Stage) proceedBtn.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    private void loginBtnClicked(ActionEvent event) throws IOException {
+        String username = userField.getText();
+        String password = passField.getText();
+
+        if (username.equals("eyelash") && password.equals("admin")) {
+            System.out.println("admin login bitch");
+            
+        } else {
+            System.out.println("not working");
+        }
     }
     @FXML
     private void handleRegister(ActionEvent event) throws IOException {
