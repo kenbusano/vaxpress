@@ -46,7 +46,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="usernameField" onAction="#checkFields" prefHeight="46.0" prefWidth="428.0" style="-fx-font-family: 'Poppins';">
+                  <TextField fx:id="usernameField" prefHeight="46.0" prefWidth="428.0" style="-fx-font-family: 'Poppins';">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></TextField>
@@ -55,7 +55,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField fx:id="passwordField" onAction="#checkFields" prefHeight="46.0" prefWidth="428.0">
+                  <PasswordField fx:id="passwordField" prefHeight="46.0" prefWidth="428.0">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>
@@ -65,7 +65,7 @@
          <bottom>
             <VBox prefHeight="71.0" prefWidth="428.0" spacing="12.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="proceedBtn" disable="true" mnemonicParsing="false" onAction="#checkFields" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Next" />
+                  <Button fx:id="proceedBtn" disable="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Next" />
                   <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-size: 16px;-fx-font-family: 'Poppins';" text="Already have an account?" />
                </children>
             </VBox>
