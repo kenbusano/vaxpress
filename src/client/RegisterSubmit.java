@@ -31,6 +31,8 @@ public class RegisterSubmit {
     private Button proceedLast;
     @FXML
     private Button backLogin;
+    @FXML
+    private Button backTop;
 
     @FXML
     private void proceedNext(ActionEvent event) throws IOException {
@@ -59,6 +61,16 @@ public class RegisterSubmit {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
         Stage stage = (Stage) backLogin.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void backToFirst(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt1.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) backTop.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
