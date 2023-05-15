@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -34,7 +39,7 @@
                   </TilePane>
                   <VBox prefHeight="490.0" prefWidth="192.0" spacing="12.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-text-fill: yellow;" text="Home">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Home">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -94,16 +99,11 @@
       </BorderPane>
       <BorderPane layoutX="282.0" layoutY="96.0" prefHeight="471.0" prefWidth="760.0">
          <top>
-            <VBox prefHeight="86.0" prefWidth="759.0" spacing="6.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="47.0" prefWidth="760.0" spacing="6.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label style="-fx-font-weight: bold;" text="Hello, Administrator!">
+                  <Label style="-fx-font-weight: bold;" text="Vaccination Details">
                      <font>
                         <Font size="32.0" />
-                     </font>
-                  </Label>
-                  <Label text="Here are some update from DOH">
-                     <font>
-                        <Font size="24.0" />
                      </font>
                   </Label>
                </children>
@@ -113,18 +113,174 @@
             </VBox>
          </top>
          <center>
-            <VBox prefHeight="371.0" prefWidth="312.0" spacing="6.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="434.0" prefWidth="760.0" spacing="6.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="191.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@logo/headline1.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="73.0" prefWidth="345.0" style="-fx-font-weight: bold;" text="DOH posts 1,944 new COVID-19 cases over Holy Week" wrapText="true">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="760.0">
+                     <children>
+                        <Label style="-fx-font-family: Poppins;" text="User ID:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets right="16.0" />
+                           </padding>
+                        </Label>
+                        <Label style="-fx-font-family: Poppins;" text="&lt;int&gt;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="760.0">
+                     <children>
+                        <Label style="-fx-font-family: Poppins;" text="Full Name:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets right="16.0" />
+                           </padding>
+                        </Label>
+                        <Label style="-fx-font-family: Poppins;" text="&lt;details&gt;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="132.0" prefWidth="760.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="6.0" style="-fx-font-family: Poppins; -fx-font-weight: bold;" text="1st Dosage">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutY="41.0" prefHeight="41.0" prefWidth="740.0" spacing="12.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label text="Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="46.0" />
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label text="Lot No.">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="64.0" />
+                                 </children>
+                              </Group>
+                           </children>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutY="83.0" prefHeight="41.0" prefWidth="740.0" spacing="12.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label text="Manufacturer">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox layoutX="108.0" prefWidth="150.0" />
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label text="Vaccinator Name">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="133.0" />
+                                 </children>
+                              </Group>
+                           </children>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="132.0" prefWidth="760.0">
+                     <children>
+                        <Label layoutX="7.0" layoutY="6.0" style="-fx-font-family: Poppins; -fx-font-weight: bold;" text="2nd Dosage">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutY="41.0" prefHeight="41.0" prefWidth="740.0" spacing="12.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label text="Date">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker layoutX="46.0" />
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label text="Lot No.">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="64.0" />
+                                 </children>
+                              </Group>
+                           </children>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutY="83.0" prefHeight="41.0" prefWidth="740.0" spacing="12.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label text="Manufacturer">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox layoutX="108.0" prefWidth="150.0" />
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label text="Vaccinator Name">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField layoutX="133.0" />
+                                 </children>
+                              </Group>
+                           </children>
+                           <padding>
+                              <Insets left="14.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="760.0" spacing="12.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="62.0" text="Back" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="84.0" text="Submit" />
+                     </children>
+                  </HBox>
                </children>
             </VBox>
          </center>

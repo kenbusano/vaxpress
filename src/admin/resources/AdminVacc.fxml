@@ -112,7 +112,7 @@
          <center>
             <VBox prefHeight="371.0" prefWidth="312.0" spacing="6.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="59.0" prefWidth="760.0" style="-fx-background-color: #F9459B; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 12px;" text="Name: &lt;test&gt;">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="59.0" prefWidth="760.0" style="-fx-background-color: #F9459B; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 12px;" text="Name: Kenneth Obsequio">
                      <font>
                         <Font size="24.0" />
                      </font>
