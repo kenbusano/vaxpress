@@ -27,10 +27,22 @@ public class RegisterSubmit {
     private TextField birthPlace;
     @FXML
     private Button proceedBtn;
+    @FXML
+    private Button proceedLast;
 
     @FXML
     private void proceedNext(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt2.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) proceedBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void lastSec(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt3.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
