@@ -38,7 +38,7 @@ public class Dashboard {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-        Stage stage = (Stage) logOut.getScene().getWindow();
+        Stage stage = (Stage) vaccHome.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -48,7 +48,7 @@ public class Dashboard {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-        Stage stage = (Stage) logOut.getScene().getWindow();
+        Stage stage = (Stage) vaccReq.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -58,7 +58,7 @@ public class Dashboard {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-        Stage stage = (Stage) logOut.getScene().getWindow();
+        Stage stage = (Stage) vaccRequest.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
