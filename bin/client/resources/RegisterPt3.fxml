@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="326.0" layoutY="149.0" prefHeight="323.0" prefWidth="428.0">
@@ -50,7 +49,7 @@
          <bottom>
             <VBox prefHeight="71.0" prefWidth="428.0" spacing="12.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Proceed" />
+                  <Button disable="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Proceed" />
                   <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="428.0" style="-fx-font-weight: BOLD; -fx-font-size: 16px; -fx-font-family: 'Poppins';" text="Back to Top" />
                </children>
             </VBox>
