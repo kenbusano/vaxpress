@@ -58,7 +58,7 @@ public class RegisterSubmit {
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-        Stage stage = (Stage) proceedLast.getScene().getWindow();
+        Stage stage = (Stage) backLogin.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
