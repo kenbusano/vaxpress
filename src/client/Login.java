@@ -47,7 +47,7 @@ public class Login {
         String password = passField.getText();
 
         if (username.equals("eyelash") && password.equals("admin")) {
-            System.out.println("admin login bitch");
+            System.out.println("The administrator is online!");
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/admin/resources/AdminPanel.fxml"));
                 Parent root = loader.load();
@@ -59,7 +59,7 @@ public class Login {
                 e.printStackTrace();
             }
         } else {
-            System.out.println("not working");
+            System.out.println("Can't proceed ^^");
         }
     }
     @FXML
