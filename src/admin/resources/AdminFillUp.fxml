@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.VaccFillUp">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.Dashboard">
    <children>
       <BorderPane prefHeight="620.0" prefWidth="240.0">
          <left>
@@ -125,7 +125,7 @@
                               <Insets right="16.0" />
                            </padding>
                         </Label>
-                        <Label style="-fx-font-family: Poppins;" text="&lt;int&gt;">
+                        <Label style="-fx-font-family: Poppins;" text="13635346437">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -142,7 +142,7 @@
                               <Insets right="16.0" />
                            </padding>
                         </Label>
-                        <Label style="-fx-font-family: Poppins;" text="&lt;details&gt;">
+                        <Label style="-fx-font-family: Poppins;" text="Kenneth Ampoloquio Obsequio">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -197,12 +197,12 @@
                               </Group>
                               <Group>
                                  <children>
-                                    <Label text="Vaccinator Name">
+                                    <Label text="Vaccinator">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="133.0" />
+                                    <TextField layoutX="92.0" prefWidth="163.0" />
                                  </children>
                               </Group>
                            </children>
@@ -260,12 +260,12 @@
                               </Group>
                               <Group>
                                  <children>
-                                    <Label text="Vaccinator Name">
+                                    <Label text="Vaccinator">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Label>
-                                    <TextField layoutX="133.0" />
+                                    <TextField layoutX="95.0" />
                                  </children>
                               </Group>
                            </children>
@@ -277,8 +277,8 @@
                   </Pane>
                   <HBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="760.0" spacing="12.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="62.0" text="Back" />
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="84.0" text="Submit" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="62.0" style="-fx-font-weight: bold;" text="Back" />
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="84.0" style="-fx-font-weight: bold;" text="Submit" />
                      </children>
                   </HBox>
                </children>
