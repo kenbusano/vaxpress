@@ -10,4 +10,6 @@ public class RegisterSubmit {
     private TextField usernameField;
     @FXML
     private PasswordField passwordField;
+    @FXML
+    private Button proceedBtn;
 }

@@ -46,7 +46,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="46.0" prefWidth="428.0" style="-fx-font-family: 'Poppins';">
+                  <TextField fx:id="fullName" prefHeight="46.0" prefWidth="428.0" style="-fx-font-family: 'Poppins';">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></TextField>
@@ -55,7 +55,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <PasswordField prefHeight="46.0" prefWidth="428.0">
+                  <PasswordField fx:id="contact" prefHeight="46.0" prefWidth="428.0">
                      <padding>
                         <Insets left="16.0" right="16.0" />
                      </padding></PasswordField>

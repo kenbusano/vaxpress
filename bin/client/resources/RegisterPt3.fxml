@@ -36,13 +36,13 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <DatePicker prefHeight="36.0" prefWidth="435.0" />
-                  <Label text="Contact Number">
+                  <DatePicker fx:id="birthday" prefHeight="36.0" prefWidth="435.0" />
+                  <Label text="Birth Place">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField prefHeight="36.0" prefWidth="428.0" />
+                  <TextField fx:id="birthPlace" prefHeight="36.0" prefWidth="428.0" />
                </children>
             </VBox>
          </center>
