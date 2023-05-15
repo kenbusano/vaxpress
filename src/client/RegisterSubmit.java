@@ -29,6 +29,8 @@ public class RegisterSubmit {
     private Button proceedBtn;
     @FXML
     private Button proceedLast;
+    @FXML
+    private Button backLogin;
 
     @FXML
     private void proceedNext(ActionEvent event) throws IOException {
@@ -43,6 +45,16 @@ public class RegisterSubmit {
     @FXML
     private void lastSec(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/RegisterPt3.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) proceedLast.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void loginPage(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/Login.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
