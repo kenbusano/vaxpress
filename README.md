@@ -1,5 +1,5 @@
 ## soon na me
 
-maglalagay ng docs this is my (Week 17)
+maglalagay ng docs this is my (Week 18)
 
-*hoy gago what if kung bukas na to???
+*hahaha good luck talaga bhie tamad ka paren tanginamo
