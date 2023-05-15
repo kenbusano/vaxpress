@@ -60,7 +60,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#signOut" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Log Out">
+                  <Button fx:id="logOut" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#signOut" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Log Out">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>

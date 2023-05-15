@@ -29,5 +29,7 @@ public class Dashboard {
         Stage stage = (Stage) logOut.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+        //load
+        System.out.println("An administrator has been offline!!");
     }
 }
