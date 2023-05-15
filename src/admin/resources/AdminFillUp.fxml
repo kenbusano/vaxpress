@@ -277,7 +277,7 @@
                   </Pane>
                   <HBox alignment="CENTER_RIGHT" prefHeight="61.0" prefWidth="760.0" spacing="12.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="62.0" style="-fx-font-weight: bold;" text="Back" />
+                        <Button fx:id="optionBack" mnemonicParsing="false" onAction="#optionList" prefHeight="40.0" prefWidth="62.0" style="-fx-font-weight: bold;" text="Back" />
                         <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="84.0" style="-fx-font-weight: bold;" text="Submit" />
                      </children>
                   </HBox>

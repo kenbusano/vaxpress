@@ -28,6 +28,9 @@ public class Dashboard {
 
     @FXML
     private Button vaccRequest;
+    
+    @FXML
+    private Button optionBack;
 
     @FXML
     private void adminHome (ActionEvent event) throws IOException {
@@ -56,6 +59,16 @@ public class Dashboard {
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
         Stage stage = (Stage) logOut.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    private void optionList (ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/AdminVacc.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
+        Stage stage = (Stage) optionBack.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
