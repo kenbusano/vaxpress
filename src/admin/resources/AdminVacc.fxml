@@ -18,7 +18,7 @@
          <left>
             <VBox prefHeight="620.0" prefWidth="240.0" spacing="6.0" style="-fx-background-color: #160050; -fx-padding: 2em;" BorderPane.alignment="CENTER">
                <children>
-                  <TilePane prefHeight="119.0" prefWidth="192.0" tileAlignment="TOP_LEFT">
+                  <TilePane prefHeight="54.0" prefWidth="192.0" tileAlignment="TOP_LEFT">
                      <children>
                         <Label style="-fx-font-family: Poppins; -fx-font-weight: Bold;" text="VAXPress" textFill="WHITE">
                            <font>
@@ -32,9 +32,9 @@
                         </Label>
                      </children>
                   </TilePane>
-                  <VBox prefHeight="490.0" prefWidth="192.0" spacing="12.0">
+                  <VBox prefHeight="431.0" prefWidth="192.0" spacing="12.0">
                      <children>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-text-fill: yellow;" text="Home">
+                        <Button fx:id="vaccHome" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#adminHome" prefHeight="35.0" prefWidth="192.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Home">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -43,7 +43,7 @@
                               </ImageView>
                            </graphic>
                         </Button>
-                        <Button fx:id="vaccReq" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#vaccine" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="Vaccination Request">
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-text-fill: yellow;" text="Vaccination Request">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -54,9 +54,6 @@
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
                         </Button>
                      </children>
                   </VBox>
@@ -96,12 +93,12 @@
          <top>
             <VBox prefHeight="86.0" prefWidth="759.0" spacing="6.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label style="-fx-font-weight: bold;" text="Hello, Administrator!">
+                  <Label style="-fx-font-weight: bold;" text="Vaccination Request">
                      <font>
                         <Font size="32.0" />
                      </font>
                   </Label>
-                  <Label text="Here are some update from DOH">
+                  <Label text="Manage people by providing their need.">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -115,16 +112,11 @@
          <center>
             <VBox prefHeight="371.0" prefWidth="312.0" spacing="6.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="191.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@logo/headline1.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="73.0" prefWidth="345.0" style="-fx-font-weight: bold;" text="DOH posts 1,944 new COVID-19 cases over Holy Week" wrapText="true">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="59.0" prefWidth="760.0" style="-fx-background-color: #F9459B; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 12px;" text="Name: &lt;test&gt;">
                      <font>
-                        <Font size="22.0" />
+                        <Font size="24.0" />
                      </font>
-                  </Label>
+                  </Button>
                </children>
             </VBox>
          </center>
