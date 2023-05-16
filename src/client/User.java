@@ -30,12 +30,12 @@ public class User {
         stage.show();
     }
     @FXML
-    private void userNews(ActionEvent event) throws IOException {
+    private void userCome(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/ClientPanel.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/main.css").toExternalForm());
-        Stage stage = (Stage) userProfile.getScene().getWindow();
+        Stage stage = (Stage) userHome.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
