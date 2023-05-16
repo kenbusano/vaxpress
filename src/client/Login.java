@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Login {
@@ -58,8 +59,29 @@ public class Login {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        } else if (username.equals("kenbusano2003@gmail.com") && password.equals("lazy")) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/ClientPanel.fxml"));
+                Parent root = loader.load();
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) userField.getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
-            System.out.println("Can't proceed ^^");
+            System.out.println("sjidsid");
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("resources/LoginError.fxml"));
+                Parent root = loader.load();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL);
+                stage.showAndWait();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
     @FXML
