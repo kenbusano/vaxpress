@@ -1,5 +1,5 @@
-## soon na me
+```
+Hi, This is my unfinished project for our university.
 
-maglalagay ng docs this is my (Week 18)
-
-*hahaha good luck talaga bhie tamad ka paren tanginamo
+Basically, I just doing my decision to develop in just school activity only.
+```
